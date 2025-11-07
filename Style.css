@@ -1,0 +1,62 @@
+/* THEME TOGGLE */
+#theme-toggle {
+  cursor: pointer;
+  font-size: 22px;
+  margin-right: 20px;
+}
+
+/* DARK / LIGHT MODE */
+.light {
+  background: white;
+  color: black;
+}
+.light .project-card {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* NAV FOR MOBILE */
+@media (max-width: 768px) {
+  nav ul {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    flex-direction: column;
+    padding: 20px;
+    display: none;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(20px);
+  }
+  nav ul.show {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
+/* SKILLS SECTION */
+.skills-box {
+  width: 60%;
+  margin: auto;
+}
+.progress {
+  width: 100%;
+  background: rgba(255,255,255,0.2);
+  border-radius: 50px;
+  height: 10px;
+  margin-bottom: 15px;
+}
+.progress span {
+  display: block;
+  height: 100%;
+  background: cyan;
+  border-radius: 50px;
+}
